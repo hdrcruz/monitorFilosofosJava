@@ -26,7 +26,7 @@ class Monitor{
     public Monitor(){
         filosofos = new int[5];        //identificador de cada filosofo
         mutex = new ReentrantLock();
-        estado = new String[5];  //estado de cada filosofo (comendo, pensando, garfosDisponiveis)
+        estado = new String[5];  //estado de cada filosofo (comendo, pensando, faminto)
         garfosDisponiveis = new Condition[5];
         for(int i=0; i<5; i++){
             filosofos[i] = i;
